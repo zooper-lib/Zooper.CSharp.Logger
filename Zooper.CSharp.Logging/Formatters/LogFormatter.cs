@@ -1,7 +1,6 @@
-﻿using System.Diagnostics;
-using Zooper.CSharp.Logging.Logger;
+﻿using Zooper.CSharp.Logging.Loggers;
 
-namespace Zooper.CSharp.Logging.Formatter
+namespace Zooper.CSharp.Logging.Formatters
 {
     /// <summary>
     /// Base class for all formatters

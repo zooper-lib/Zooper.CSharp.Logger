@@ -1,4 +1,4 @@
-﻿namespace Zooper.CSharp.Logging.Logger
+﻿namespace Zooper.CSharp.Logging.Loggers
 {
     public enum LogLevel
     {

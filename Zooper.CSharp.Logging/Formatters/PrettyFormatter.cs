@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Zooper.CSharp.Core.Extensions;
-using Zooper.CSharp.Logging.Logger;
+using Zooper.CSharp.Logging.Loggers;
 
-namespace Zooper.CSharp.Logging.Formatter
+namespace Zooper.CSharp.Logging.Formatters
 {
 	public class PrettyFormatter : LogFormatter
 	{
@@ -20,6 +20,8 @@ namespace Zooper.CSharp.Logging.Formatter
 		private readonly string _middleBorder;
 		private readonly string _bottomBorder;
 
+		private readonly bool _printEmojis;
+
 		private static readonly Dictionary<LogLevel, string> LevelEmojis = new()
 		{
 			{ LogLevel.Verbose, "" },
@@ -29,8 +31,6 @@ namespace Zooper.CSharp.Logging.Formatter
 			{ LogLevel.Error, "⛔" },
 			{ LogLevel.Wtf, "👾" },
 		};
-
-		private readonly bool _printEmojis;
 
 		public PrettyFormatter(int lineLength = 120, bool printEmojis = true)
 		{
@@ -75,7 +75,7 @@ namespace Zooper.CSharp.Logging.Formatter
 			}
 
 			// The message
-			string? emoji = _getEmoji(level);
+			string emoji = _getEmoji(level);
 			lineBuffer.AddRange(message.Split(NewLine).Select(line => $"{VerticalLine} {emoji} {line}"));
 
 			lineBuffer.Add(_middleBorder);
@@ -88,12 +88,12 @@ namespace Zooper.CSharp.Logging.Formatter
 
 			lineBuffer.Add(_bottomBorder);
 
-			return string.Join(NewLine, lineBuffer);
+			return String.Join(NewLine, lineBuffer);
 		}
 
 		private string _getEmoji(LogLevel level)
 		{
-			return _printEmojis ? LevelEmojis[level]! : String.Empty;
+			return _printEmojis ? LevelEmojis[level] : String.Empty;
 		}
 	}
 }
