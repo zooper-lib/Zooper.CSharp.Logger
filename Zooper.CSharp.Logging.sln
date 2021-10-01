@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zooper.CSharp.Logging", "Zooper.CSharp.Logging\Zooper.CSharp.Logging.csproj", "{C7CFACAA-67B6-4472-800E-66511BE2322E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zooper.CSharp.Logging.Tests", "Zooper.CSharp.Logging.Tests\Zooper.CSharp.Logging.Tests.csproj", "{AFBEFF3A-4F97-49A2-AC27-605C83DEC388}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7CFACAA-67B6-4472-800E-66511BE2322E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7CFACAA-67B6-4472-800E-66511BE2322E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7CFACAA-67B6-4472-800E-66511BE2322E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7CFACAA-67B6-4472-800E-66511BE2322E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFBEFF3A-4F97-49A2-AC27-605C83DEC388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFBEFF3A-4F97-49A2-AC27-605C83DEC388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFBEFF3A-4F97-49A2-AC27-605C83DEC388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFBEFF3A-4F97-49A2-AC27-605C83DEC388}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32DA9F92-F88C-414E-8FBD-E03CDA5CAD84}
+	EndGlobalSection
+EndGlobal

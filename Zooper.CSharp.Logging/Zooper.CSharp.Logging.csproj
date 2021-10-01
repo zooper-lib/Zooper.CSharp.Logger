@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <Version>0.0.1</Version>
+    <Authors>DirtyNative</Authors>
+    <Company>Zooper</Company>
+    <Copyright>Zooper</Copyright>
+    <Description>This library provides a wrapper for loggers. Some examples are included.</Description>
+    <PackageProjectUrl>https://github.com/zooper-lib</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/zooper-lib/Zooper.CSharp.Logging</RepositoryUrl>
+    <PackageLicenseFile>../LICENSE.txt</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Zooper.CSharp.Logging.sln.DotSettings" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Zooper.CSharp.Core" Version="0.0.3" />
+  </ItemGroup>
+
+</Project>
