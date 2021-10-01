@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Zooper.CSharp.Logging.sln.DotSettings" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Writer\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Zooper.CSharp.Core" Version="0.0.3" />
+  </ItemGroup>
+
+</Project>
