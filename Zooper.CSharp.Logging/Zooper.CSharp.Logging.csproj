@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFramework>net5.0</TargetFramework>
 		<Nullable>enable</Nullable>
-		<Version>0.0.1</Version>
+		<Version>0.0.2</Version>
 		<Authors>DirtyNative</Authors>
 		<Company>Zooper</Company>
 		<Copyright>Zooper</Copyright>
@@ -15,7 +15,7 @@
 	</PropertyGroup>
 
 	<Target Name="PreparePackageReleaseNotesFromFile" BeforeTargets="GenerateNuspec">
-		<ReadLinesFromFile File="CHANGELOG.md">
+		<ReadLinesFromFile File="../CHANGELOG.md">
 			<Output TaskParameter="Lines" ItemName="ReleaseNoteLines" />
 		</ReadLinesFromFile>
 		<PropertyGroup>
