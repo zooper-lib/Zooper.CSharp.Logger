@@ -34,5 +34,5 @@ jobs:
     - name: Publish NuGet
       uses: brandedoutcast/publish-nuget@v2.5.5
       with:
-        PROJECT_FILE_PATH: Zooper.CSharp.Logging.csproj
+        PROJECT_FILE_PATH: Zooper.CSharp.Logging/Zooper.CSharp.Logging.csproj
         NUGET_KEY: ${{ secrets.NUGET_KEY }}
