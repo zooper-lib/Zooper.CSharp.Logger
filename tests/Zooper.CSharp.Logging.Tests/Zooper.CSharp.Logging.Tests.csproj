@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Zooper.CSharp.Logging\Zooper.CSharp.Logging.csproj" />
+    <ProjectReference Include="..\..\Zooper.CSharp.Logging.csproj" />
   </ItemGroup>
 
 </Project>

@@ -24,8 +24,14 @@
 	</Target>
 
 	<ItemGroup>
-		<None Include="../LICENSE.txt" Pack="true" PackagePath="." />
-		<None Include="../README.md" Pack="true" PackagePath="." />
+	  <Compile Remove="tests\**" />
+	  <EmbeddedResource Remove="tests\**" />
+	  <None Remove="tests\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="LICENSE.txt" Pack="true" PackagePath="." />
+		<None Include="README.md" Pack="true" PackagePath="." />
 	</ItemGroup>
 
 	<ItemGroup>
